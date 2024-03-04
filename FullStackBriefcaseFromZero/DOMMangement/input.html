@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet" >
+    <script defer src="Script/script.js"></script>
+    <title>Ian Webpage</title>
+</head>
+<body class="body-input">
+    
+    <div id="navbar" class="navbar-container">
+            <a class="logo">Ian <span>Vargas</span></a>
+    <nav class="nav">
+            <button onclick="window.location='index.html';" class="nav__button" active  href="/index.html" id="tableHomeItem" >Table</button>
+            <button  onclick="window.location='input.html'" href="/input.html" class="nav__button">Input</button>
+            <button onclick="window.location='login.html'" class="nav__button">Login</button>
+    
+    </nav>
+    </div>
+    <div class="input-control">
+        <input id="first-name" type="text" placeholder="your name"/> 
+        <input id="last-name" type="text" placeholder="Last name">
+        <button id="submit-button" type="submit" onclick="showResultOfInputs(document.getElementById('first-name').value , document.getElementById('last-name').value)">submit! </button>
+    </div>
+
+    <div class = "text">
+            <output  id="outputnames"> </output>
+
+
+     </div>   
+</body>
+
+
+
+</html>
