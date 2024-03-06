@@ -18,18 +18,18 @@
     
     </nav>
     </div>
-<div>
+<div  class ="login-form-container">
     <form id="loginForm">
-        <label>Username:</label>
-        <input type="text" id="username-login" placeholder="Insert your username">
-        <label>Password:</label>
-        <input type="text" id="password-login" placeholder="Insert your Password">
-        <label>Are you an employee?</label>
-        <input type="radio" id="radiochoice1" name="employee" value="Yes" onclick="employeeFormIdToShow(value)"> Yes </input>
-        <input type="radio" id="radiochoice1" name="employee" value="No" onclick="employeeFormIdToShow(value)"> No </input>
-        <label id="employeelabel" style="visibility:hidden">employee id: </label>
-        <input style="visibility:hidden" type="text" id="employeeid"  placeholder="Input your employee id"> 
-        <button> Login  </button>
+        <label class="label-login">Username:</label><br>
+        <input type="text" id="username-login" placeholder="Insert your username"><br>
+        <label class="label-login">Password:</label><br>
+        <input type="text" id="password-login" placeholder="Insert your Password"><br>
+        <label class="label-login">Are you an employee?</label><br>
+        <input type="radio" id="radiochoice1" name="employee" value="Yes" onclick="employeeFormIdToShow(value)"> Yes </input> 
+        <input type="radio" id="radiochoice1" name="employee" value="No" onclick="employeeFormIdToShow(value)"> No </input> <br>
+        <label id="employeelabel" style="visibility:hidden" class="label-login-employeid">employee id: </label><br>
+        <input style="visibility:hidden" type="text" id="employeeid"  placeholder="Input your employee id"> <br>
+        <button > Login  </button>
     </form>
 </div>
 </body>

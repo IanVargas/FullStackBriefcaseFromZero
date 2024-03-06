@@ -23,23 +23,19 @@ html{
     align-content: center;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
 }
-
 nav{
     align-content: center;
     list-style-type: none;
     display: inline-block;
 }    
-
 .logo{
     margin-right: 60%;
     font-size: 3rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 .logo span{
     color: #8B0000 ;
 }
-
 .nav__button{
     background: none;
     border: none;
@@ -48,47 +44,34 @@ nav{
     margin-top: 10%;
     margin-right: 15px;
 }
-
 .nav__button:hover{
     transform: scale(1.3,1.3);
     color: #ffffff;
 }
-
 .active{
     color: #D0D7D8;
     transform: scale(1.1,1.1);
 }
-
-
-header{
-    background-color: aqua;
-}
-
 .table-container{
     padding: 30rem;
-    box-shadow: black;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    color: white;   
 }
-
 .table{
     color: white;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column wrap;
-    height: 100%;
-    width: 100%;
-    align-items: center;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: black;
+    
 }
 
-
-.error-message{
-    color: red;
-    display: absolute;
-    visibility: visible;
-
-
+.table-tbody{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 1rem;
+    
 }
 
 .form-input-error {
@@ -96,12 +79,140 @@ header{
 }
 
 
-.input-control{
-    background: none;
-}
 
 .input-control small{
     visibility: hidden;
 }
+
+
+/*Input css*/
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.input-container{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 400px;
+
+    
+}
+.input-container input{
+    border-radius: 30px;    
+    width: 25%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 2rem;
+}
+
+.input-container input::placeholder{
+    text-transform: capitalize;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.input-container input:focus::placeholder{
+    visibility: hidden;
+
+}
+
+.output-container{
+    width: 50rem;
+    background-color: black;
+    border-radius: 40px;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;       
+}
+
+.output-container output{
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: 'Lucida Sans';
+    margin-left: 30px;
+}
+
+
+/*login index*/
+
+.login-form-container{
+    display: flex;
+    flex-flow: row wrap;
+    border-style: dashed;
+    width: 30rem;
+    height: 70vh;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    background-color: rgb(249, 202, 233);
+}
+
+.login-form-container form{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.label-login{
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+   
+
+}
+
+.label-login-employeid{
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 0px;
+   
+}
+.login-form-container input{
+    margin-left: 3%;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 38vh;
+    height: 5vh;
+    border-radius: 40px;
+
+}
+
+.login-form-container input::placeholder{
+    padding: 20px;
+}
+
+
+
+.login-form-container input:focus::placeholder{
+    visibility: hidden;
+    
+}
+
+#radiochoice1{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 10px;
+    margin-bottom: 30px;
+
+}
+
+.login-form-container button{
+    border-radius: 10px;
+    height: 2.2rem;
+    text-align: center;
+    width: 90px;
+    margin-left: 18vh;
+    margin-bottom: 25px;
+
+}
+
 
 /* Add animation (fade in the popup) */

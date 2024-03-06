@@ -91,7 +91,6 @@ function employeeFormIdToShow(value){
     }else{
         labelInput.style.visibility = "hidden";
         inputEmployee.style.visibility= "hidden";
-
     }
 
 
