@@ -99,3 +99,16 @@ function employeeFormIdToShow(value){
 menuActive();
 addrowToButton();
 
+function letterFinder(word, match){
+     for (let i = 0; i < words.length;i++){
+        if (match === word[i]){
+            console.log(`found the ${match} at ${i}`);
+        }else {
+            console.log('---No match found at', i);
+        }
+     }
+}
+
+
+letterFinder("test",t);
+
