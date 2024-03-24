@@ -8,12 +8,13 @@ const isAnOddNumber = () => {
     console.log("The number is odd!");
 }
 
-function oddOrEven(numberToReview,isAnOddNumber,isAnEvenNumber){
+function oddOrEven(numberToReview,vonIsAnOddNumber,onIsAnEenNumber){ //cambiar nombre parametros 
     if (typeof(numberToReview = 'number')){  
         if(numberToReview % 2 === 0){
-            isAnEvenNumber();
+            onIsAnOddNumber();
+        
         }else{
-            isAnOddNumber();
+            onIsAnOddNumber();
         }
     }else{
         console.log("parameter should be a number");
