@@ -18,17 +18,20 @@
     
     </nav>
     </div>
-    <div class="input-control">
+    <div class="main-container">
+       <div class="input-container">
         <input id="first-name" type="text" placeholder="your name"/> 
         <input id="last-name" type="text" placeholder="Last name">
         <button id="submit-button" type="submit" onclick="showResultOfInputs(document.getElementById('first-name').value , document.getElementById('last-name').value)">submit! </button>
+        <input type="password"/> 
+        <input type="email"/>
+        </div>
+        <div class = "output-container">
+            <output  id="outputnames"> </output>
+     </div>   
     </div>
 
-    <div class = "text">
-            <output  id="outputnames"> </output>
-
-
-     </div>   
+    
 </body>
 
 
