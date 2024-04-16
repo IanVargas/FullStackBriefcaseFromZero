@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet" >
+    <script defer src="Script/script.js"></script>
+    <title>Ian Webpage</title>
+</head>
+<body class="body-home">
+    
+    <div id="navbar" class="navbar-container">
+            <a class="logo">Ian <span>Vargas</span></a>
+    <nav class="nav">
+            <button  onclick="window.location='index.html'"  class="nav__button" active  href="/index.html" id="tableHomeItem" >Table</button>
+            <button  onclick="window.location='input.html'" href="/input.html" class="nav__button">Input</button>
+            <button onclick="window.location='Login.html'" class="nav__button">Login</button>
+    
+    </nav>
+    </div>
+    <div class="table-container">
+        <table class="table" id="table-home">
+            <thead >
+                <tr >
+                    <th class="table-header">Header 1</th>
+                    <th class="table-header">Header 2</th>
+                    <th class="table-header">Header 3</th>
+                </tr>
+            </thead>
+            <tbody class="table-tbody" id="list">
+                <tr >
+                    <td>Data 1-1</td>
+                    <td>Data 1-2</td>
+                    <td>Data 1-3</td>
+                </tr>
+                <tr>
+                    <td>Data 2-1</td>
+                    <td>Data 2-2</td>
+                    <td>Data 2-3</td>
+                </tr>
+                <tr>
+                    <td>Data 2-1</td>
+                    <td>Data 2-2</td>
+                    <td>Data 2-3</td>
+                </tr>
+                <tr id='xxx'>
+                    <td>Data 2-1</td>
+                    <td>Data 2-2</td>
+                    <td>Data 2-3</td>
+                </tr >
+                <!-- Add more rows as needed -->
+            </tbody>
+            <tfoot id="bottom-row">
+                <button id='add-button'>add item</button>
+                <button id='remove-button'>Remove item</button>
+            </tfoot>
+        </table>
+
+    </div>
+</body>
+
+
+
+</html>

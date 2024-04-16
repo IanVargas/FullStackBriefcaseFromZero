@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet" >
+    <script defer src="Script/script.js"></script>
+    <title>Ian Webpage</title>
+</head>
+<body class="body-input">
+    
+    <div id="navbar" class="navbar-container">
+            <a class="logo">Ian <span>Vargas</span></a>
+    <nav class="nav">
+            <button onclick="window.location='index.html';" class="nav__button" active  href="/index.html" id="tableHomeItem" >Table</button>
+            <button  onclick="window.location='input.html'" href="/input.html" class="nav__button">Input</button>
+            <button onclick="window.location='login.html'" class="nav__button">Login</button>
+    
+    </nav>
+    </div>
+<div  class ="login-form-container">
+    <form id="loginForm">
+        <label class="label-login">Username:</label><br>
+        <input type="text" id="username-login" placeholder="Insert your username"><br>
+        <label class="label-login">Password:</label><br>
+        <input type="text" id="password-login" placeholder="Insert your Password"><br>
+        <label class="label-login">Are you an employee?</label><br>
+        <input type="radio" id="radiochoice1" name="employee" value="Yes" onclick="employeeFormIdToShow(value)"> Yes </input> 
+        <input type="radio" id="radiochoice1" name="employee" value="No" onclick="employeeFormIdToShow(value)"> No </input> <br>
+        <label id="employeelabel" style="visibility:hidden" class="label-login-employeid">employee id: </label><br>
+        <input style="visibility:hidden" type="text" id="employeeid"  placeholder="Input your employee id"> <br>
+        <button > Login  </button>
+    </form>
+</div>
+</body>
+
+
+
+</html>
