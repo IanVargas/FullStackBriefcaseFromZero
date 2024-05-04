@@ -41,7 +41,7 @@ async function recollectToDoList(userLoggedId){
 }
 async function completedTask(toDoListFormUser,task){
    toDoListFormUser.data.data.toDoTasks = toDoListFormUser.data.data.toDoTasks.filter((obj) => obj.task != task);
-   toDoListFormUser.data.data.completedTasks.push({
+   toDoListFormUser.data.data.completedTask.push({
         task : task 
    }) 
    await axios.put(`https://api.restful-api.dev/objects/${userLoggedId}`,toDoListFormUser.data)
@@ -69,8 +69,6 @@ function addTask(){
 }
 
 }
-
-
 async function updateApi(taskToAdd){
     const toDoListFormUser = await getTodoListFromApi(userLoggedId);
     toDoListFormUser.data.data.toDoTasks.push(

@@ -4,7 +4,6 @@ login_button.addEventListener('click', () => {
     const username = document.getElementById('user-name').value;
     let password = document.getElementById('user-password').value;
     password = hashPassword(password);
-    console.log(password)
     if(username,password)
         checkCredentialsUser(username,password);
 });
@@ -14,6 +13,10 @@ function hashPassword(password){
     const hashedPassword = hashedInstance.getHash('HEX');
     return hashedPassword;
 };
+async function getDataApi(){
+    const usersDataBase = await axios.get(url);
+    return usersDataBase;
+}
 async function checkCredentialsUser(username,password){
     const userDataTocheckCredentials = await getDataApi();
     userDataTocheckCredentials.data.data.users.forEach(user => {
@@ -29,8 +32,4 @@ async function checkCredentialsUser(username,password){
             }
     });
     //console.log(userDataTocheckCredentials.data.data)
-}
-async function getDataApi(){
-    const usersDataBase = await axios.get(url);
-    return usersDataBase;
 }

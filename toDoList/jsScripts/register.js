@@ -46,7 +46,8 @@ async function checkDatabaseUsers(newUsername, newPassword) {
 async function registerNewUSer(newUsername,newPassword,userDataRecolectedFromApi){
 	const dataDefault ={ data : {
 			toDoTasks : [
-			]
+			],
+			completedTask:[]
 		}
 	}
 	try{
@@ -58,7 +59,7 @@ async function registerNewUSer(newUsername,newPassword,userDataRecolectedFromApi
 	})
 	updateBaseUsersApi(userDataRecolectedFromApi);
 	document.cookie = `sessionToken=${uploadNewUSer.data.id}`
-	window.location.replace('/toDoList/home.html');
+	window.location.replace('./toDoList.html');
 	}catch(error){
 		
 	}
