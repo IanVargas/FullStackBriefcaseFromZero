@@ -1,0 +1,6 @@
+<form action="{% url 'getform' %}" method="POST"> 
+    {% csrf_token %} <!--tag is necessary to prevent cross-site forgery attacks. You’ll learn more about this later on in the course. -->
+    <p>Name: <input type="name" name="name"input type="text" name="id"></p> 
+    <p>UserID :<input type="text" name="id"></p> 
+    <input type="submit"> 
+</form> 
