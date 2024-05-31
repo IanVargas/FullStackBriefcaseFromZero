@@ -9,5 +9,7 @@ urlpatterns = [
     path('showform/', views.showform),
     path('getuser/', views.qryview) ,
     path("getform/", views.getform),
-    path('getuser/<str:name>/<int:id>', views.pathview, name='pathview')    
+    path('getuser/<str:name>/<int:id>', views.pathview, name='pathview'),
+    path('login/', views.show_login_page),
+    path('logincheck/', views.login_check, name='logincheck')
 ] 

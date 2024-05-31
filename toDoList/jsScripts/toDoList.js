@@ -60,7 +60,7 @@ function addTask(){
     if(taskToAdd!=""){
     new_input.remove();
                 //console.log(toDoListFormUser.data.data.toDoTasks)
-    completedTask(toDoListFormUser,taskToAdd);// Remove the parent <li> element when the button is clicked
+    completedTask(toDoListFormUser,taskToAdd); // Remove the parent <li> element when the button is clicked
     }};
  new_input.innerHTML = taskToAdd;
  listtodo.appendChild(new_input);

@@ -39,3 +39,14 @@ def getform(request):
         id = request.POST['id']
         name = request.POST['name']
     return HttpResponse("name : {} userid: {}".format(name,id))
+
+
+def show_login_page(request):
+    return render(request,'login.html')
+
+def login_check(request):
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
+    return HttpResponse("name : {} password: {}".format(username,password))
+    

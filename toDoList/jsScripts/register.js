@@ -47,7 +47,9 @@ async function registerNewUSer(newUsername,newPassword,userDataRecolectedFromApi
 	const dataDefault ={ data : {
 			toDoTasks : [
 			],
-			completedTask:[]
+			completedTask:[
+				
+			]
 		}
 	}
 	try{
