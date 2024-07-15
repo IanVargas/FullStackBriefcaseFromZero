@@ -4,19 +4,16 @@ import './stylesheets/App.css'
 import  Header  from './components/header';
 import ContactUs from './components/contact';
 import About from './components/about';
-import { BrowserRouter } from 'react-router-dom';
+
 
 function App() {
  // const [count, setCount] = useState(0)
 
   return (
     <>
-    <BrowserRouter> 
       <Header />
       <About/>
       <ContactUs/>
-    </BrowserRouter>
-    
     </>
   )
 }
