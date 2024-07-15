@@ -1,0 +1,12 @@
+.banner-container{
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    justify-content: space-around;
+}
+
+
+.baner-text{
+    display: flex;
+    
+}
